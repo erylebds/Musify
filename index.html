@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Musify </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- Container for the home information -->
+        <div id="home" class="header">
+
+            <!-- Buttons/Links for the website-->
+            <div class="navigation-bar">
+                 <div class="profile-name">
+                    <p> ER </p>
+                </div>
+
+                <div class="links">
+                    <a href="#home"> Home </a>
+                    <a href="#artists"> Artists </a>
+                    <a href="#playlist"> Playlist </a>
+                    <a href="#albums"> Albums </a>
+                </div>
+            </div>
+
+            <!-- Container for images and some texts -->
+            <div class="short-info">
+                <img src="res/profile.jpg" alt="profile" draggable="false">
+                
+                <div class="desc">
+                    <h1> Eryle Delos Santos </h1>
+                    <p>Computer Science student with a passion for technology and a love for music, always eager to learn and explore new ideas. </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Container for the main section of the website -->
+        <div class="main-section">
+            <div class="passions">
+
+                <!-- Favorite Artists -->
+                <h1 id="artists"> Top Favorite Artists</h1>
+                <div class="fav-artist-list">
+                    <div class="artist-card">
+                        <img src="res/Avril Lavigne.jpg" alt="artist1" draggable="false">
+                        <p class="artist-name"> Avril Lavigne </p>
+                        <p class="artist-role"> Artist </p>
+                    </div>
+
+                     <div class="artist-card">
+                        <img src="res/Chappell Roan.jpg" alt="artist2" draggable="false">
+                        <p class="artist-name"> Chappell Roan </p>
+                        <p class="artist-role"> Artist </p>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="res/ABBA.jpg" alt="artist3" draggable="false">
+                        <p class="artist-name"> ABBA </p>
+                        <p class="artist-role"> Artist </p>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="res/G-IDLE.jpg" alt="artist4" draggable="false">
+                        <p class="artist-name"> G-IDLE </p>
+                        <p class="artist-role"> Artist </p>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="res/King Princess.jpg" alt="artist5" draggable="false">
+                        <p class="artist-name"> King Princess </p>
+                        <p class="artist-role"> Artist </p>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="res/Simple Plan.jpg" alt="artist6" draggable="false">
+                        <p class="artist-name"> Simple Plan </p>
+                        <p class="artist-role"> Artist </p>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="res/Lady Gaga.jpg" alt="artist7" draggable="false">
+                        <p class="artist-name"> Lady Gaga </p>
+                        <p class="artist-role"> Artist </p>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="res/Lady A.jpg" alt="artist8" draggable="false">
+                        <p class="artist-name"> Lady A </p>
+                        <p class="artist-role"> Artist </p>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="res/Adele.jpg" alt="artist9" draggable="false">
+                        <p class="artist-name"> Adele </p>
+                        <p class="artist-role"> Artist </p>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="res/League of Legends.jpg" alt="artist10" draggable="false">
+                        <p class="artist-name"> League of Legends </p>
+                        <p class="artist-role"> Artist </p>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="res/Bruno Mars.jpg" alt="artist11" draggable="false">
+                        <p class="artist-name"> Bruno Mars </p>
+                        <p class="artist-role"> Artist </p>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="res/Collin Raye.jpg" alt="artist12" draggable="false">
+                        <p class="artist-name"> Collin Raye </p>
+                        <p class="artist-role"> Artist </p>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="res/The Jets.jpg" alt="artist13" draggable="false">
+                        <p class="artist-name"> The Jets </p>
+                        <p class="artist-role"> Artist </p>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="res/Air Supply.jpg" alt="artist14" draggable="false">
+                        <p class="artist-name"> Air Supply </p>
+                        <p class="artist-role"> Artist </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top Songs -->
+             <div id="playlist" class="playlist">
+                <div class="playlist-header">
+                    <img src="res/cat-playlist-img.jpg" alt="playlist-cover" draggable="false">
+                    <div class="playlist-info">
+                        <p> Public Playlist </p>
+                        <h1> Favorite Songs </h1>
+                        <p> Created by Er, 10 songs, 1 hr 30 min</p>
+                        <button> PLAY </button>
+                    </div>
+                </div>
+
+                <div class="list-of-songs">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th id="num"> # </th>
+                                <th id="title"> TITLE </th>
+                                <th id="audio"> AUDIO </th>
+                                <th id="album"> ALBUM </th>
+                                <th id="date"><img src="res/calendar.png" alt="date-added"> </th>
+                                <th id="duration"><img src="res/duration.png" alt="time-duration"> </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> 1 </td>
+                                <td> I'm with You</td>
+                                <td>
+                                    <audio controls>
+                                        <source src="res/mp3/Avril Lavigne - I'm With You.mp3" type="audio/mpeg">
+                                    </audio>
+                                </td>
+                                <td> Let Go </td>
+                                <td> August 22, 2025</td>
+                                <td> 3:43 </td>
+                            </tr>
+                            <tr>
+                                <td> 2 </td>
+                                <td> When You're Gone </td>
+                                <td>
+                                    <audio controls>
+                                        <source src="res/mp3/Avril Lavigne - When You're Gone.mp3" type="audio/mpeg">
+                                    </audio>
+                                </td>
+                                <td> The Best Damn Thing </td>
+                                <td> August 22, 2025</td>
+                                <td> 3:57 </td>
+                            </tr>
+                            <tr>
+                                <td> 3 </td>
+                                <td> Wish You Were Here </td>
+                                <td>
+                                    <audio controls>
+                                        <source src="res/mp3/Avril Lavigne - Wish You Were Here.mp3" type="audio/mpeg">
+                                    </audio>
+                                </td>
+                                <td> Goodbye Lullaby </td>
+                                <td> August 22, 2025</td>
+                                <td> 3:45 </td>
+                            </tr>
+                            <tr>
+                                <td> 4 </td>
+                                <td> Nobody's Home </td>
+                                <td>
+                                    <audio controls>
+                                        <source src="res/mp3/Avril Lavigne - Nobody's Home.mp3" type="audio/mpeg">
+                                    </audio>
+                                </td>
+                                <td> Under My Skin </td>
+                                <td> August 22, 2025</td>
+                                <td> 3:30 </td>
+                            </tr>
+                            <tr>
+                                <td> 5 </td>
+                                <td> Fantastic </td>
+                                <td>
+                                    <audio controls>
+                                        <source src="res/mp3/King Princess - Fantastic.mp3" type="audio/mpeg">
+                                    </audio>
+                                </td>
+                                <td> Arcane </td>
+                                <td> August 22, 2025</td>
+                                <td> 3:05 </td>
+                            </tr>
+                            <tr>
+                                <td> 6 </td>
+                                <td> The Subway </td>
+                                <td>
+                                    <audio controls>
+                                        <source src="res/mp3/Chappell Roan - The Subway.mp3" type="audio/mpeg">
+                                    </audio>
+                                </td>
+                                <td> The Subway </td>
+                                <td> August 22, 2025</td>
+                                <td> 4:12 </td>
+                            </tr>
+                            <tr>
+                                <td> 7 </td>
+                                <td> Goodluck, Babe! </td>
+                                <td>
+                                    <audio controls>
+                                        <source src="res/mp3/Chappell Roan - Good Luck, Babe!.mp3" type="audio/mpeg">
+                                    </audio>
+                                </td>
+                                <td> Good Luck, Babe! </td>
+                                <td> August 22, 2025</td>
+                                <td> 3:38 </td>
+                            </tr>
+                            <tr>
+                                <td> 8 </td>
+                                <td> A Night to Remember </td>
+                                <td>
+                                    <audio controls>
+                                        <source src="res/mp3/beabadoobee x Laufey - A Night To Remember.mp3" type="audio/mpeg">
+                                    </audio>
+                                </td>
+                                <td> A Night to Remember </td>
+                                <td> August 22, 2025</td>
+                                <td> 3:53 </td>
+                            </tr>
+                            <tr>
+                                <td> 9 </td>
+                                <td> Time in a Bottle </td>
+                                <td>
+                                    <audio controls>
+                                        <source src="res/mp3/Jim Croce - Time In A Bottle.mp3" type="audio/mpeg">
+                                    </audio>
+                                </td>
+                                <td> Photographs & Memories </td>
+                                <td> August 22, 2025</td>
+                                <td> 2:26 </td>
+                            </tr>
+                            <tr>
+                                <td> 10 </td>
+                                <td> You Got It All </td>
+                                <td>
+                                    <audio controls>
+                                        <source src="res/mp3/The Jets - You Got It All.mp3" type="audio/mpeg">
+                                    </audio>
+                                </td>
+                                <td> Back To Back </td>
+                                <td> August 22, 2025</td>
+                                <td> 4:47 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <h1 id="albums" class="fave-album"> Favorite Albums </h1>
+
+            <div class="favorite-albums">
+                <div class="album-gallery">
+                    <div class="album-card">
+                            <img src="res/Let Go - Album.jpg" alt="album1" draggable="false">
+                            <p class="album-name"> Let Go </p>
+                            <p class="album-date"> 2002 </p>
+                    </div>
+
+                    <div class="album-card">
+                            <img src="res/The Best Damn Thing - Album.png" alt="album2" draggable="false">
+                            <p class="album-name"> The Best Damn Thing </p>
+                            <p class="album-date"> 2007 </p>
+                    </div>
+
+                    <div class="album-card">
+                            <img src="res/Goodbye Lullaby - Album.jpg" alt="album3" draggable="false">
+                            <p class="album-name"> Goodbye Lullaby </p>
+                            <p class="album-date"> 2011 </p>
+                    </div>
+
+                    <div class="album-card">
+                            <img src="res/Under My Skin - Album.jpg" alt="album4" draggable="false">
+                            <p class="album-name"> Under My Skin </p>
+                            <p class="album-date"> 2004 </p>
+                    </div>
+
+                    <div class="album-card">
+                            <img src="res/Arcane - Album.jpg" alt="album5" draggable="false">
+                            <p class="album-name"> Arcane </p>
+                            <p class="album-date"> 2024 </p>
+                    </div>
+
+                    <div class="album-card">
+                            <img src="res/The Rise and Fall of Midwest - Album.jpg" alt="album6" draggable="false">
+                            <p class="album-name"> The Rise and Fall of Midwest </p>
+                            <p class="album-date"> 2023 </p>
+                    </div>
+
+                    <div class="album-card">
+                            <img src="res/Know It All - Album.jpg" alt="album7" draggable="false">
+                            <p class="album-name"> Know It All </p>
+                            <p class="album-date"> 2015 </p>
+                    </div>
+
+                    <div class="album-card">
+                            <img src="res/Head Above Water - Album.jpg" alt="album8" draggable="false">
+                            <p class="album-name"> Head Above Water </p>
+                            <p class="album-date"> 2019 </p>
+                    </div>
+
+                    <div class="album-card">
+                            <img src="res/Let Go - Album.jpg" alt="album1" draggable="false">
+                            <p class="album-name"> Let Go </p>
+                            <p class="album-date"> 2002 </p>
+                    </div>
+
+                    <div class="album-card">
+                            <img src="res/The Best Damn Thing - Album.png" alt="album2" draggable="false">
+                            <p class="album-name"> The Best Damn Thing </p>
+                            <p class="album-date"> 2007 </p>
+                    </div>
+
+                    <div class="album-card">
+                            <img src="res/Goodbye Lullaby - Album.jpg" alt="album3" draggable="false">
+                            <p class="album-name"> Goodbye Lullaby </p>
+                            <p class="album-date"> 2011 </p>
+                    </div>
+
+                    <div class="album-card">
+                            <img src="res/Under My Skin - Album.jpg" alt="album4" draggable="false">
+                            <p class="album-name"> Under My Skin </p>
+                            <p class="album-date"> 2004 </p>
+                    </div>
+
+                    <div class="album-card">
+                            <img src="res/Arcane - Album.jpg" alt="album5" draggable="false">
+                            <p class="album-name"> Arcane </p>
+                            <p class="album-date"> 2024 </p>
+                    </div>
+
+                    <div class="album-card">
+                            <img src="res/The Rise and Fall of Midwest - Album.jpg" alt="album6" draggable="false">
+                            <p class="album-name"> The Rise and Fall of Midwest </p>
+                            <p class="album-date"> 2023 </p>
+                    </div>
+
+                    <div class="album-card">
+                            <img src="res/Know It All - Album.jpg" alt="album7" draggable="false">
+                            <p class="album-name"> Know It All </p>
+                            <p class="album-date"> 2015 </p>
+                    </div>
+
+                    <div class="album-card">
+                            <img src="res/Head Above Water - Album.jpg" alt="album8" draggable="false">
+                            <p class="album-name"> Head Above Water </p>
+                            <p class="album-date"> 2019 </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="end-section">
+                <h3> The End </h3>
+                <p> Musify by Er 2025 </p>
+            </div>
+        </div>
+    </body>
+</html>
